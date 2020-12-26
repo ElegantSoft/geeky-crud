@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="18673" />
+    <option name="totalTimeSeconds" value="26137" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,7 +45,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestCrud_Find in github.com/ElegantSoft/geeky-crud/crud">
+    <configuration name="go build crud.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="geeky-crud" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/crud/crud.go" />
+      <package value="github.com/ElegantSoft/geeky-crud" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build github.com/ElegantSoft/geeky-crud" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="geeky-crud" />
       <working_directory value="$PROJECT_DIR$" />
@@ -55,8 +64,33 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestCrud_Find in github.com/ElegantSoft/geeky-crud/crud" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="geeky-crud" />
+      <working_directory value="$PROJECT_DIR$/crud" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ElegantSoft/geeky-crud/crud" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCrud_Find\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHelpers_GetOperatorValue in github.com/ElegantSoft/geeky-crud/crud" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="geeky-crud" />
+      <working_directory value="$PROJECT_DIR$/crud" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ElegantSoft/geeky-crud/crud" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestHelpers_GetOperatorValue\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCrud_Find in github.com/ElegantSoft/geeky-crud/crud" />
+        <item itemvalue="Go Test.TestHelpers_GetOperatorValue in github.com/ElegantSoft/geeky-crud/crud" />
+        <item itemvalue="Go Build.go build crud.go" />
         <item itemvalue="Go Build.go build github.com/ElegantSoft/geeky-crud" />
       </list>
     </recent_temporary>
@@ -71,7 +105,7 @@
       <updated>1608651365478</updated>
       <workItem from="1608651366558" duration="141000" />
       <workItem from="1608651523461" duration="1207000" />
-      <workItem from="1609002628568" duration="1408000" />
+      <workItem from="1609002628568" duration="7442000" />
     </task>
     <servers />
   </component>
@@ -82,29 +116,42 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="304" key="GridCell.Tab.0.bottom" timestamp="1608668708076">
+    <state x="702" y="348" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609011564856">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="702" y="348" key="#com.intellij.fileTypes.FileTypeChooser/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011564856" />
+    <state width="1876" height="542" key="GridCell.Tab.0.bottom" timestamp="1609011690245">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="542" key="GridCell.Tab.0.bottom/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690245" />
     <state width="1876" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708076" />
     <state width="1876" height="304" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092248" />
-    <state width="1876" height="304" key="GridCell.Tab.0.center" timestamp="1608668708075">
+    <state width="1876" height="542" key="GridCell.Tab.0.center" timestamp="1609011690243">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="542" key="GridCell.Tab.0.center/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690243" />
     <state width="1876" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708075" />
     <state width="1876" height="304" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092200" />
-    <state width="1876" height="304" key="GridCell.Tab.0.left" timestamp="1608668708074">
+    <state width="1876" height="542" key="GridCell.Tab.0.left" timestamp="1609011690242">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="542" key="GridCell.Tab.0.left/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690242" />
     <state width="1876" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708074" />
     <state width="1876" height="304" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092198" />
-    <state width="1876" height="304" key="GridCell.Tab.0.right" timestamp="1608668708075">
+    <state width="1876" height="542" key="GridCell.Tab.0.right" timestamp="1609011690245">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1876" height="542" key="GridCell.Tab.0.right/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690245" />
     <state width="1876" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708075" />
     <state width="1876" height="304" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092215" />
-    <state width="219" height="463" key="HiddenNamespacesPopup" timestamp="1608651931731">
+    <state width="219" height="463" key="HiddenNamespacesPopup" timestamp="1609011555150">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="219" height="463" key="HiddenNamespacesPopup/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011555150" />
     <state width="219" height="463" key="HiddenNamespacesPopup/0.0.1920.1080@0.0.1920.1080" timestamp="1608651931731" />
+    <state x="666" y="252" width="588" height="576" key="find.popup" timestamp="1609007956905">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="666" y="252" width="588" height="576" key="find.popup/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609007956905" />
   </component>
 </project>
