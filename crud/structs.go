@@ -9,14 +9,36 @@ type FindQuery struct {
 	Joins  []string `json:"joins"`
 }
 
+var OperatorsKeys = struct {
+	Equal          string
+	Greater        string
+	Lesser         string
+	NotEqual       string
+	Like           string
+	In             string
+	GreaterOrEqual string
+	LesserOrEqual  string
+}{
+	Equal:          "$eq",
+	Greater:        "$gt",
+	Lesser:         "$lt",
+	NotEqual:       "$not",
+	Like:           "$like",
+	In:             "$in",
+	GreaterOrEqual: "$gte",
+	LesserOrEqual:  "$lte",
+}
+
 // Operators
 var Operators = map[string]string{
-	"$eq":   "=",
-	"$gt":   ">",
-	"$lt":   "<",
-	"$not":  "<>",
-	"$like": "LIKE",
-	"$in":   "IN",
+	OperatorsKeys.Equal:          "=",
+	OperatorsKeys.Greater:        ">",
+	OperatorsKeys.Lesser:         "<",
+	OperatorsKeys.NotEqual:       "<>",
+	OperatorsKeys.Like:           "LIKE",
+	OperatorsKeys.In:             "IN",
+	OperatorsKeys.GreaterOrEqual: ">=",
+	OperatorsKeys.LesserOrEqual:  "<=",
 }
 
 type OperatorValue = [2]interface{}

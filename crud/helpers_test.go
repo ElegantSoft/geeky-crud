@@ -2,6 +2,7 @@ package crud
 
 import (
 	"github.com/go-playground/assert/v2"
+	"log"
 	"testing"
 )
 
@@ -25,6 +26,7 @@ func TestHelpers_GetOperatorValueWithPercentWhenUsingLike(t *testing.T) {
 		"$like": "test",
 	}
 	operatorValues := getOperatorAndValue(query)
+	log.Printf("result -> %+v", operatorValues)
 	assert.Equal(t, operatorValues[1][1], "%test%")
 
 }

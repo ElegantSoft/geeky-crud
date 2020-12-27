@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="da7b70f8-f18a-4f33-ad07-25891570003b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud/crud.go" beforeDir="false" afterPath="$PROJECT_DIR$/crud/crud.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud/crud_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crud/crud_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/helpers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/crud/helpers_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud/structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/crud/structs.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="42292" />
+    <option name="totalTimeSeconds" value="44754" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,7 +77,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestCrud_Find in github.com/ElegantSoft/geeky-crud/crud">
+  <component name="RunManager" selected="Go Test.TestHelpers_GetOperatorValueWithPercentWhenUsingLike in github.com/ElegantSoft/geeky-crud/crud">
     <configuration name="TestCrud_Find in github.com/ElegantSoft/geeky-crud/crud" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="geeky-crud" />
       <working_directory value="$PROJECT_DIR$/crud" />
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestHelpers_GetOperatorValueWithPercentWhenUsingLike in github.com/ElegantSoft/geeky-crud/crud" />
         <item itemvalue="Go Test.TestCrud_Find in github.com/ElegantSoft/geeky-crud/crud" />
         <item itemvalue="Go Test.TestCrud_FindWithPreload in github.com/ElegantSoft/geeky-crud/crud" />
         <item itemvalue="Go Test.TestStrCase in github.com/ElegantSoft/geeky-crud/crud" />
         <item itemvalue="Go Test.TestHelpers_GetOperatorValue in github.com/ElegantSoft/geeky-crud/crud" />
-        <item itemvalue="Go Test.TestHelpers_GetOperatorValueWithPercentWhenUsingLike in github.com/ElegantSoft/geeky-crud/crud" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +155,7 @@
       <workItem from="1608651523461" duration="1207000" />
       <workItem from="1609002628568" duration="7597000" />
       <workItem from="1609069519040" duration="5218000" />
-      <workItem from="1609088073552" duration="5801000" />
+      <workItem from="1609088073552" duration="7241000" />
     </task>
     <servers />
   </component>
@@ -186,35 +186,35 @@
     </state>
     <state x="702" y="348" key="#com.intellij.fileTypes.FileTypeChooser/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011564856" />
     <state x="468" y="258" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1609089898889" />
-    <state width="1236" height="309" key="GridCell.Tab.0.bottom" timestamp="1609104695537">
+    <state width="1236" height="309" key="GridCell.Tab.0.bottom" timestamp="1609106955660">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1876" height="542" key="GridCell.Tab.0.bottom/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009205" />
-    <state width="1236" height="309" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1609104695537" />
+    <state width="1236" height="309" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1609106955660" />
     <state width="1876" height="382" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1609083459040" />
     <state width="1236" height="304" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1609096362439" />
     <state width="1876" height="304" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092248" />
-    <state width="1236" height="309" key="GridCell.Tab.0.center" timestamp="1609104695536">
+    <state width="1236" height="309" key="GridCell.Tab.0.center" timestamp="1609106955660">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1876" height="542" key="GridCell.Tab.0.center/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009203" />
-    <state width="1236" height="309" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1609104695536" />
+    <state width="1236" height="309" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1609106955660" />
     <state width="1876" height="382" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1609083459038" />
     <state width="1236" height="304" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1609096362438" />
     <state width="1876" height="304" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092200" />
-    <state width="1236" height="309" key="GridCell.Tab.0.left" timestamp="1609104695534">
+    <state width="1236" height="309" key="GridCell.Tab.0.left" timestamp="1609106955659">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1876" height="542" key="GridCell.Tab.0.left/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009202" />
-    <state width="1236" height="309" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1609104695534" />
+    <state width="1236" height="309" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1609106955659" />
     <state width="1876" height="382" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1609083459038" />
     <state width="1236" height="304" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1609096362437" />
     <state width="1876" height="304" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092198" />
-    <state width="1236" height="309" key="GridCell.Tab.0.right" timestamp="1609104695537">
+    <state width="1236" height="309" key="GridCell.Tab.0.right" timestamp="1609106955660">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1876" height="542" key="GridCell.Tab.0.right/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009204" />
-    <state width="1236" height="309" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1609104695537" />
+    <state width="1236" height="309" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1609106955660" />
     <state width="1876" height="382" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1609083459039" />
     <state width="1236" height="304" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1609096362438" />
     <state width="1876" height="304" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092215" />

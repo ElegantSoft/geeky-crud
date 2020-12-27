@@ -102,11 +102,11 @@ func TestCrud_FindWithPreload(t *testing.T) {
 		FindQuery{
 			Q: Query{
 				"content": {
-					"$like": "asd",
+					OperatorsKeys.Like: "asd",
 				},
 				"title": {
-					"$eq":  "test1",
-					"$not": "asd",
+					OperatorsKeys.Equal:  "test1",
+					OperatorsKeys.NotEqual: "asd",
 				},
 			},
 			Joins: []string{"comments"},
