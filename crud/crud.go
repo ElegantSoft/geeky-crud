@@ -9,9 +9,9 @@ type Crud struct {
 	db *gorm.DB
 }
 
-func (c *Crud) Find(query findQuery, model interface{}) {
+func (c *Crud) Find(query FindQuery, model interface{}) {
 	trx := c.db
-	for k, v := range query.q {
+	for k, v := range query.Q {
 		operatorValues := getOperatorAndValue(v)
 		for _, ov := range operatorValues {
 			condition := k + " " + ov[0].(string) + " ?"

@@ -1,12 +1,12 @@
 package crud
 
-type findStatement = map[string]interface{}
-type query = map[string]findStatement
+type FindStatement = map[string]interface{}
+type Query = map[string]FindStatement
 
-type findQuery struct {
-	q      map[string]findStatement
-	fields []string
-	join   []string
+type FindQuery struct {
+	Q      Query    `json:"q"`
+	Fields []string `json:"fields"`
+	Joins  []string `json:"joins"`
 }
 
 // Operators

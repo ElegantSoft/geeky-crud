@@ -28,8 +28,8 @@ func TestCrud_Find(t *testing.T) {
 	db.Conn.Create(&post)
 	var a models.Post
 	service.Find(
-		findQuery{
-			q: query{
+		FindQuery{
+			Q: Query{
 				"content": {
 					"$like": "asd",
 				},
