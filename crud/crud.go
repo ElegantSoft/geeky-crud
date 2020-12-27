@@ -2,6 +2,7 @@ package crud
 
 import (
 	"gorm.io/gorm"
+	"log"
 )
 
 type Crud struct {
@@ -10,12 +11,14 @@ type Crud struct {
 
 func (c *Crud) Find(query findQuery, model interface{}) {
 	trx := c.db
-	//for k, v := range query.q {
-	//	operator, value := getOperatorAndValue(v)
-	//	condition := k + " " + operator + " ?"
-	//	log.Printf("cond -> %+v & value -> %+v", condition, value)
-	//	trx = trx.Where(condition, value)
-	//}
+	for k, v := range query.q {
+		operatorValues := getOperatorAndValue(v)
+		for _, ov := range operatorValues {
+			condition := k + " " + ov[0].(string) + " ?"
+			log.Printf("cond -> %+v & value -> %+v", condition, ov[1])
+			trx = trx.Where(condition, ov[1])
+		}
+	}
 	trx.Find(model)
 }
 

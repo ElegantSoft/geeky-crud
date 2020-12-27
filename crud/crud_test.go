@@ -3,6 +3,7 @@ package crud
 import (
 	"github.com/ElegantSoft/geeky-crud/db"
 	"github.com/ElegantSoft/geeky-crud/models"
+	"github.com/go-playground/assert/v2"
 	"log"
 	"testing"
 )
@@ -12,26 +13,34 @@ func TestCrud_Find(t *testing.T) {
 
 	db.Conn.AutoMigrate(&models.Post{})
 	service := NewCrudService(db.Conn)
-	post := models.Post{
-		Title:    "test1",
-		Content:  "test1",
-		Comments: nil,
+	post := []models.Post{
+		{
+			Title:    "test1",
+			Content:  "asddsaasddsa",
+			Comments: nil,
+		},
+		{
+			Title:    "test1",
+			Content:  "test1",
+			Comments: nil,
+		},
 	}
 	db.Conn.Create(&post)
 	var a models.Post
 	service.Find(
-		findQuery{map[string]map[string]string{
-			"title": {
-				"$eq": "test1",
+		findQuery{
+			q: query{
+				"content": {
+					"$like": "asd",
+				},
+				"title": {
+					"$eq":  "test1",
+					"$not": "asd",
+				},
 			},
-			"content": {
-				"$like": "tes",
-			},
-		}, []string{}},
+		},
 		&a)
 	log.Printf("a -> %+v", a)
 
-	if a.ID != 1 {
-		t.Fatal("failed")
-	}
+	assert.Equal(t, a.Title, "test1")
 }
