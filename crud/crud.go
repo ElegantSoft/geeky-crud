@@ -12,20 +12,20 @@ type Crud struct {
 func (c *Crud) Find(query FindQuery, model interface{}) {
 	trx := c.db
 
-
-
 	// adding where statements for query
 	for k, v := range query.Q {
 		operatorValues := getOperatorAndValue(v)
 		for _, ov := range operatorValues {
 			condition := k + " " + ov[0].(string) + " ?"
 			log.Printf("cond -> %+v & value -> %+v", condition, ov[1])
-			trx = trx.Where(condition, ov[1])
+			if ov[0].(string) != "" && ov[1] != nil {
+				trx = trx.Where(condition, ov[1])
+			}
 		}
 	}
 
 	// load relations
-	for _,v := range query.Joins {
+	for _, v := range query.Joins {
 		gormRelation := convertSnakeToGormPascal(v)
 		trx.Preload(gormRelation)
 	}

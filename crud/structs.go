@@ -16,6 +16,7 @@ var Operators = map[string]string{
 	"$lt":   "<",
 	"$not":  "<>",
 	"$like": "LIKE",
+	"$in":   "IN",
 }
 
 type OperatorValue = [2]interface{}

@@ -55,6 +55,9 @@ func TestCrud_Find(t *testing.T) {
 					"$eq":  "test1",
 					"$not": "asd",
 				},
+				"id" : {
+					"$in": []uint{1,2},
+				},
 			},
 			Joins: []string{"comments"},
 			Fields: []string{"title", "content", "id"},
