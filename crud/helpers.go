@@ -2,14 +2,19 @@ package crud
 
 import "reflect"
 
-// The operator is first 3 chars
-func getOperatorAndValue(query map[string]string) (string, string) {
+// get operator value slice
+func getOperatorAndValue(query map[string]interface{}) []OperatorValue {
 	keys := reflect.ValueOf(query).MapKeys()
-	operatorKey := keys[0].String()
-	operator := operators[operatorKey]
-	value := query[operatorKey]
-	if operatorKey == "$like" {
-		value = "%" + value + "%"
+	var operatorValueSlice []OperatorValue
+
+	for _, operatorKey := range keys {
+		operator := Operators[operatorKey.String()]
+		value := query[operatorKey.String()]
+		if operatorKey.String() == "$like" {
+			value = "%" + value.(string) + "%"
+		}
+		operatorValueSlice = append(operatorValueSlice, OperatorValue{operator, value})
 	}
-	return operator, value
+
+	return operatorValueSlice
 }

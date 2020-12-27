@@ -6,10 +6,12 @@ type findQuery struct {
 }
 
 // Operators
-var operators = map[string]string{
+var Operators = map[string]string{
 	"$eq":   "=",
 	"$gt":   ">",
 	"$lt":   "<",
 	"$not":  "<>",
 	"$like": "LIKE",
 }
+
+type OperatorValue = [2]interface{}
