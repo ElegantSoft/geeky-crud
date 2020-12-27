@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="da7b70f8-f18a-4f33-ad07-25891570003b" name="Default Changelist" comment="" />
+    <list default="true" id="da7b70f8-f18a-4f33-ad07-25891570003b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="26137" />
+    <option name="totalTimeSeconds" value="26571" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -19,6 +41,9 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.14.6/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
@@ -26,14 +51,20 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1m1BlGeu3ZD6soKcSK7bN5lOPfd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
@@ -105,12 +136,27 @@
       <updated>1608651365478</updated>
       <workItem from="1608651366558" duration="141000" />
       <workItem from="1608651523461" duration="1207000" />
-      <workItem from="1609002628568" duration="7442000" />
+      <workItem from="1609002628568" duration="7597000" />
+      <workItem from="1609069519040" duration="418000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -120,28 +166,28 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="702" y="348" key="#com.intellij.fileTypes.FileTypeChooser/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011564856" />
-    <state width="1876" height="542" key="GridCell.Tab.0.bottom" timestamp="1609011690245">
+    <state width="1876" height="542" key="GridCell.Tab.0.bottom" timestamp="1609012009205">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="542" key="GridCell.Tab.0.bottom/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690245" />
+    <state width="1876" height="542" key="GridCell.Tab.0.bottom/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009205" />
     <state width="1876" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708076" />
     <state width="1876" height="304" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092248" />
-    <state width="1876" height="542" key="GridCell.Tab.0.center" timestamp="1609011690243">
+    <state width="1876" height="542" key="GridCell.Tab.0.center" timestamp="1609012009203">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="542" key="GridCell.Tab.0.center/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690243" />
+    <state width="1876" height="542" key="GridCell.Tab.0.center/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009203" />
     <state width="1876" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708075" />
     <state width="1876" height="304" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092200" />
-    <state width="1876" height="542" key="GridCell.Tab.0.left" timestamp="1609011690242">
+    <state width="1876" height="542" key="GridCell.Tab.0.left" timestamp="1609012009202">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="542" key="GridCell.Tab.0.left/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690242" />
+    <state width="1876" height="542" key="GridCell.Tab.0.left/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009202" />
     <state width="1876" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708074" />
     <state width="1876" height="304" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092198" />
-    <state width="1876" height="542" key="GridCell.Tab.0.right" timestamp="1609011690245">
+    <state width="1876" height="542" key="GridCell.Tab.0.right" timestamp="1609012009204">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="542" key="GridCell.Tab.0.right/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609011690245" />
+    <state width="1876" height="542" key="GridCell.Tab.0.right/-1280.280.1280.800/0.0.1920.1080@0.0.1920.1080" timestamp="1609012009204" />
     <state width="1876" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1608668708075" />
     <state width="1876" height="304" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1608652092215" />
     <state width="219" height="463" key="HiddenNamespacesPopup" timestamp="1609011555150">
