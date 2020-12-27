@@ -1,6 +1,10 @@
 package crud
 
-import "reflect"
+import (
+	"github.com/iancoleman/strcase"
+	"reflect"
+	"strings"
+)
 
 // get operator value slice
 func getOperatorAndValue(query map[string]interface{}) []OperatorValue {
@@ -17,4 +21,14 @@ func getOperatorAndValue(query map[string]interface{}) []OperatorValue {
 	}
 
 	return operatorValueSlice
+}
+
+func convertSnakeToGormPascal(snake string) string {
+	strSlice := strings.Split(snake, ".")
+	var camelCaseStringsSlice []string
+	for _, v := range strSlice {
+		camelCaseStringsSlice = append(camelCaseStringsSlice, strcase.ToCamel(v))
+	}
+	result := strings.Join(camelCaseStringsSlice, ".")
+	return result
 }

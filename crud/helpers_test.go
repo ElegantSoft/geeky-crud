@@ -19,12 +19,25 @@ func TestHelpers_GetOperatorValue(t *testing.T) {
 
 }
 
-func TestHelpers_GetOperatorValueWithPercentWhenUsingLike(t *testing.T)  {
+func TestHelpers_GetOperatorValueWithPercentWhenUsingLike(t *testing.T) {
 	query := map[string]interface{}{
-		"$lt": 5,
+		"$lt":   5,
 		"$like": "test",
 	}
 	operatorValues := getOperatorAndValue(query)
 	assert.Equal(t, operatorValues[1][1], "%test%")
 
+}
+
+func TestStrCase(t *testing.T) {
+	tests := map[string]string{
+		"posts.comments.user": "Posts.Comments.User",
+		"posts":               "Posts",
+		"post_comments":       "PostComments",
+		"credit_cards":        "CreditCards",
+		"users.credit_cards":  "Users.CreditCards",
+	}
+	for k, v := range tests {
+		assert.Equal(t, convertSnakeToGormPascal(k), v)
+	}
 }
