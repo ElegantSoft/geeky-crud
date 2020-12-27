@@ -25,7 +25,11 @@ type Post struct {
 func TestCrud_Find(t *testing.T) {
 	db.InitConnection()
 
-	db.Conn.AutoMigrate(&Post{})
+	_ = db.Conn.AutoMigrate(&Post{})
+	_ = db.Conn.AutoMigrate(&Comment{})
+	db.Conn.Exec("DELETE from comments")
+	db.Conn.Exec("DELETE from posts")
+
 	service := NewCrudService(db.Conn)
 	post := []models.Post{
 		{
@@ -53,6 +57,7 @@ func TestCrud_Find(t *testing.T) {
 				},
 			},
 			Joins: []string{"comments"},
+			Fields: []string{"title", "content", "id"},
 		},
 		&a)
 	log.Printf("a -> %+v", a)
@@ -63,8 +68,8 @@ func TestCrud_Find(t *testing.T) {
 func TestCrud_FindWithPreload(t *testing.T) {
 	db.InitConnection()
 
-	db.Conn.AutoMigrate(&Post{})
-	db.Conn.AutoMigrate(&Comment{})
+	_ = db.Conn.AutoMigrate(&Post{})
+	_ = db.Conn.AutoMigrate(&Comment{})
 	db.Conn.Exec("DELETE from comments")
 	db.Conn.Exec("DELETE from posts")
 	service := NewCrudService(db.Conn)

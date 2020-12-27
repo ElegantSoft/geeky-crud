@@ -12,6 +12,8 @@ type Crud struct {
 func (c *Crud) Find(query FindQuery, model interface{}) {
 	trx := c.db
 
+
+
 	// adding where statements for query
 	for k, v := range query.Q {
 		operatorValues := getOperatorAndValue(v)
@@ -26,6 +28,11 @@ func (c *Crud) Find(query FindQuery, model interface{}) {
 	for _,v := range query.Joins {
 		gormRelation := convertSnakeToGormPascal(v)
 		trx.Preload(gormRelation)
+	}
+
+	// adding selects
+	if len(query.Fields) > 0 {
+		trx.Select(query.Fields)
 	}
 	trx.Find(model)
 }
